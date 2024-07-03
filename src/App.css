@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com");
+@import url("https://fonts.gstatic.com");
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap");
+
+.my_font {
+  font-family: "Maven Pro", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 50;
+  font-style: normal;
+}
+
+* {
+  @apply scroll-smooth m-0 p-0;
+  box-sizing: border-box;
+  scroll-behavior: smooth !important;
+}
+
+.App {
+  @apply bg-black my_font;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-[#000300];
+}
+::-webkit-scrollbar-thumb {
+  @apply rounded-full bg-cyan-500;
+}
+::-webkit-scrollbar {
+  @apply w-[0.5px] h-[0.5px];
+}
+.scrollDiv::-webkit-scrollbar {
+  @apply w-[1px] h-[1px];
+}
+
+.f {
+  font-family: monospace;
+}
+
+.btn {
+  @apply f capitalize cursor-pointer py-1 px-3 rounded-md text-center active:translate-y-1 ease-in-out duration-300;
+}
+
+.heightFix,
+.heightFixAdmin {
+  min-height: calc(100vh - 150px);
+  height: 100%;
+}
